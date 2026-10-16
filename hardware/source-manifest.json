@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "story": "1-establish-the-reproducible-basys3-project",
+  "tool": "Vivado 2025.2",
+  "part": "xc7a35tcpg236-1",
+  "top": "q_top",
+  "contract_revision": 2,
+  "geometry_profile_revision": 3,
+  "physics_profile_revision": 1,
+  "sources": [
+    {
+      "path": "third_party/supplied/Ps2Interface.vhd",
+      "origin": "/Users/doyeon/Desktop/FDP2026/FDP2026.srcs/sources_1/new/Ps2Interface.vhd",
+      "revision": {
+        "kind": "supplied-byte-baseline-sha256",
+        "value": "7c2af6f51bd408549435bbbbafcb9d33053a98a1a63bdc1046c9872f52c499eb"
+      },
+      "sha256": "7c2af6f51bd408549435bbbbafcb9d33053a98a1a63bdc1046c9872f52c499eb",
+      "language": "VHDL-93",
+      "compile_order": 1,
+      "provenance": "course-supplied",
+      "notice": "Copyright 2006 Digilent, Inc.; DO NOT MODIFY THIS MODULE. No standalone open-source license is supplied.",
+      "modified": false
+    },
+    {
+      "path": "third_party/supplied/Mouse_Control.vhd",
+      "origin": "/Users/doyeon/Desktop/FDP2026/FDP2026.srcs/sources_1/new/Mouse_Control.vhd",
+      "revision": {
+        "kind": "supplied-byte-baseline-sha256",
+        "value": "f57b58c4c35b21e569b0d279a2014c41f19a57bf10990338463e0480944d9ca7"
+      },
+      "sha256": "f57b58c4c35b21e569b0d279a2014c41f19a57bf10990338463e0480944d9ca7",
+      "language": "VHDL-93",
+      "compile_order": 2,
+      "provenance": "course-supplied",
+      "notice": "Copyright 2006 Digilent, Inc.; DO NOT MODIFY THIS MODULE. No standalone open-source license is supplied.",
+      "modified": false
+    },
+    {
+      "path": "third_party/supplied/Oled_Display.v",
+      "origin": "/Users/doyeon/Desktop/FDP2026/FDP2026.srcs/sources_1/new/Oled_Display.v",
+      "revision": {
+        "kind": "supplied-byte-baseline-sha256",
+        "value": "f0f7b4a7a5b65a40598ccbb8f985ac826e788ce381c613409e92cea52528ffe5"
+      },
+      "sha256": "f0f7b4a7a5b65a40598ccbb8f985ac826e788ce381c613409e92cea52528ffe5",
+      "language": "Verilog",
+      "compile_order": 3,
+      "provenance": "course-supplied",
+      "notice": "Copyright 2017 Joel Holdsworth. Embedded three-condition BSD notice (including non-endorsement) and disclaimer retained in full; supplied adaptation notice retained.",
+      "modified": false
+    },
+    {
+      "path": "third_party/projectf/rtl/display_timings.v",
+      "origin": "https://github.com/projf/display_controller",
+      "upstream_path": "rtl/display_timings.v",
+      "revision": {
+        "kind": "git-commit",
+        "value": "dafbe3385749da4ae2100bba2945350ace7ec04e"
+      },
+      "sha256": "56cac92217cf5a2a8c516407e918603f59ffd66b87ac6a244d1c7eb454cc1624",
+      "language": "Verilog-2001",
+      "compile_order": 4,
+      "provenance": "public-open-source",
+      "license": "MIT",
+      "notice": "Copyright (c) 2019 Will Green, Project F; third_party/projectf/LICENSE",
+      "modified": false
+    },
+    {
+      "path": "third_party/projectf/LICENSE",
+      "origin": "https://github.com/projf/display_controller",
+      "upstream_path": "LICENSE",
+      "revision": {
+        "kind": "git-commit",
+        "value": "dafbe3385749da4ae2100bba2945350ace7ec04e"
+      },
+      "sha256": "a0dc35766ae6cc13a557a9389fb3d74014df76a2c8c398644221c63bbc0c143f",
+      "language": "text",
+      "compile_order": null,
+      "provenance": "public-open-source",
+      "license": "MIT",
+      "notice": "Copyright (c) 2019 Will Green, Project F; third_party/projectf/LICENSE",
+      "modified": false
+    },
+    {
+      "path": "third_party/supplied/Basys3_Master.xdc",
+      "origin": "/Users/doyeon/Desktop/FDP2026/FDP2026.srcs/constrs_1/new/Basys3_Master.xdc",
+      "revision": {
+        "kind": "supplied-byte-baseline-sha256",
+        "value": "e0425ea15ed3d215bb7f2123df8a62c744e07f544bfc2e1d8951e53e41e36879"
+      },
+      "sha256": "e0425ea15ed3d215bb7f2123df8a62c744e07f544bfc2e1d8951e53e41e36879",
+      "language": "XDC/Tcl",
+      "compile_order": null,
+      "provenance": "course-supplied-pin-baseline",
+      "notice": "Supplied Basys3 master constraints; preserve original contents. No standalone license supplied.",
+      "modified": false,
+      "usage": "Read by board_pins.tcl to generate active build/basys3_io.xdc; never added directly as active constraints."
+    },
+    {
+      "path": "rtl/include/q_contract.vh",
+      "origin": "pre-existing repository shared declarations",
+      "sha256": "462bbccf811d59aa181514bd3af9bc901a6b52a376ef3111601f7882ae2c944a",
+      "language": "Verilog-2001 header",
+      "compile_order": null,
+      "notice": "Existing project declarations preserved byte-for-byte.",
+      "modified": false
+    },
+    {
+      "path": "rtl/include/q_ports.vh",
+      "origin": "pre-existing repository shared declarations",
+      "sha256": "3ec4504a85b584cd6ce0546507903ff4b1fe833d1279599414200f912b68775c",
+      "language": "Verilog-2001 header",
+      "compile_order": null,
+      "notice": "Existing project declarations preserved byte-for-byte.",
+      "modified": false
+    },
+    {
+      "path": "rtl/include/q_geometry_params.vh",
+      "origin": "pre-existing repository shared declarations",
+      "sha256": "7343229561cc5f2f9946204e067022d1159c54191f9e045cc3c8499e8db762fe",
+      "language": "Verilog-2001 header",
+      "compile_order": null,
+      "notice": "Existing project declarations preserved byte-for-byte.",
+      "modified": false
+    },
+    {
+      "path": "rtl/include/q_physics_params.vh",
+      "origin": "pre-existing repository shared declarations",
+      "sha256": "580cae2a14dc2bcb2477dcc49ba6c5962ede041e93fde99acd5ab0ffc9fb191f",
+      "language": "Verilog-2001 header",
+      "compile_order": null,
+      "notice": "Existing project declarations preserved byte-for-byte.",
+      "modified": false
+    },
+    {
+      "path": "rtl/platform/q_clock_reset.v",
+      "origin": "repository application RTL, Story 1",
+      "sha256": "66feb2278291ae8cc1545daf7c10d3de60da8c29b6333cd8946c77deee17e3c0",
+      "language": "Verilog-2001",
+      "compile_order": 5,
+      "notice": "Project application source; no third-party license asserted."
+    },
+    {
+      "path": "rtl/platform/q_mouse_adapter.v",
+      "origin": "repository application RTL, Story 1",
+      "sha256": "fd9e673ee8e76daeb77b9e6715bc61c60a33e35bc9533147b6cc1c2237ce43cf",
+      "language": "Verilog-2001",
+      "compile_order": 6,
+      "notice": "Project application source; no third-party license asserted."
+    },
+    {
+      "path": "rtl/platform/q_oled_adapter.v",
+      "origin": "repository application RTL, Story 1",
+      "sha256": "3f19e187623e4decfc4f9822069ec91fbb71182ce727e17d0298ff37eacb4673",
+      "language": "Verilog-2001",
+      "compile_order": 7,
+      "notice": "Project application source; no third-party license asserted."
+    },
+    {
+      "path": "rtl/platform/q_vga_timing.v",
+      "origin": "repository application RTL, Story 1",
+      "sha256": "53ed013b4cb3b73afcf52f1a35c767d5045b53297abf4673714352268dd768ab",
+      "language": "Verilog-2001",
+      "compile_order": 8,
+      "notice": "Project application source; no third-party license asserted."
+    },
+    {
+      "path": "rtl/q_top.v",
+      "origin": "repository application RTL, Story 1",
+      "sha256": "fad29e621f081cbe5af72bcf82984ec9fb4176296795cfe2e42571e29c8e9e56",
+      "language": "Verilog-2001",
+      "compile_order": 9,
+      "notice": "Project application source; no third-party license asserted."
+    }
+  ],
+  "generated_ip": {
+    "generator": "scripts/vivado/create_clocks.tcl",
+    "vendor": "xilinx.com",
+    "library": "ip",
+    "name": "clk_wiz",
+    "version": "6.0",
+    "outputs": [
+      {
+        "module": "q_clk_pixel",
+        "hz": 25200000,
+        "input_hz": 100000000,
+        "mmcm_multiplier": 31.5,
+        "mmcm_divider": 5,
+        "output_divider": 25,
+        "vco_hz": 630000000
+      },
+      {
+        "module": "q_clk_oled",
+        "hz": 6250000,
+        "input_hz": 100000000,
+        "mmcm_multiplier": 8,
+        "mmcm_divider": 1,
+        "output_divider": 128,
+        "vco_hz": 800000000
+      }
+    ],
+    "settings_record": "build/q_clk_*-resolved.txt and build/ip/*/*.xci"
+  },
+  "constraints_order": [
+    "build/basys3_io.xdc",
+    "Clocking Wizard generated XDC",
+    "scripts/vivado/foundation_timing.xdc (implementation, LATE)"
+  ],
+  "oled_header": {
+    "required_argument": [
+      "JA",
+      "JB",
+      "JC"
+    ],
+    "physical_selection": "unconfirmed",
+    "record": "build/build-selection.txt"
+  },
+  "verification": {
+    "performed": "Source inspection and SHA256 comparison only; no tests run.",
+    "vivado": "Not present in host PATH; no elaboration, synthesis or implementation evidence.",
+    "board": "Pending G-2; G-1/G-2 remain open."
+  }
+}

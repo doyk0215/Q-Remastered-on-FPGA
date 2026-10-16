@@ -1,0 +1,95 @@
+- id: "1"
+  title: Establish the reproducible Basys3 project
+  description: >-
+    Implement the SPEC.md platform constraints and prototype-gates.md G-1/G-2 foundation: a Vivado 2025.2 build manifest, supplied-driver baselines, pinned VGA timing source with provenance, active XDC, generated clocks and domain reset sequencing. Use the published shared headers and peripheral adapters with the specified mouse bounds and OLED pixel timing.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "2"
+  title: Render coherent buffered VGA scenes
+  description: >-
+    Implement SPEC.md CAP-11 and prototype-gates.md G-5 using two one-bit banks, frame-local magenta ball metadata and the module-contracts.md frame/epoch ownership protocol. Provide bounded world rasterization, aligned scanout and safe complete-frame swaps without front-bank writes or mixed attempts.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "3"
+  title: Implement bounded rigid-body arithmetic and motion
+  description: >-
+    Implement the numerical foundation for SPEC.md CAP-7 and prototype-gates.md G-3, publishing internal formats, rounding, saturation, mass/inertia floors, inverse properties and shared geometry kernels. Integrate gravity, local-to-world transforms and rotation under the adopted two-substep cadence and combined translation/rotation movement budget.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "4"
+  title: Resolve contacts, rotation and left-wall completion
+  description: >-
+    Implement SPEC.md CAP-8/CAP-9 with deterministic capsule contacts, bounded impulse/correction sweeps, containment and a left-boundary goal latch that survives correction. Establish contact-driven angular motion and ball impact using rotation-fixture.md, retaining the last complete world and reporting faults on workload or numerical failure.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "5"
+  title: Admit strokes atomically with reliable results
+  description: >-
+    Implement SPEC.md CAP-5 and module-contracts.md creation handling: validate the final sampled path, reject penetration or degenerate geometry without insertion or impulse, and compute accepted rigid-body properties. Preserve tangency, the five-body limit, separate control receipt, immutable terminal responses, duplicate replay and cancellation by attempt.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "6"
+  title: Capture mouse gestures and the visible stroke preview
+  description: >-
+    Implement SPEC.md CAP-4 and prototype-gates.md G-4 with deterministic endpoint-preserving simplification to eight vertices, shared path-length rounding, and identical displayed/submitted geometry. Publish shared UI fonts and hit regions, consume UI gestures once, and disable pause throughout a held-left draw without queuing its release.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "7"
+  title: Deliver the first playable drawing and physics slice
+  description: >-
+    Integrate stories 1 through 6 for SPEC.md CAP-4 through CAP-9/CAP-11: load a development scene, draw and admit an object, show falling/contact/rotation, and detect the ball reaching the left edge in one bitstream. Implement the minimal attempt controller, exactly-once allowance debit and coherent UI/world publication through the admission barrier; the development fixture is not a fourth selectable stage.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "8"
+  title: Complete game navigation and attempt lifecycle
+  description: >-
+    Implement SPEC.md CAP-1 through CAP-3/CAP-6/CAP-10 with lobby selection, pause/resume, reset, return, exhaustion/rejection feedback and the stage-dependent victory choices. Apply module-contracts.md arbitration, stale presented-view rejection, goal priority, reliable traffic draining and presentation-timed feedback without charging a new attempt for old results.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "9"
+  title: Present coherent OLED and LED status
+  description: >-
+    Implement SPEC.md CAP-12/CAP-13 using the supplied OLED driver and module-contracts.md coherent status mailbox. Show stage, wrapped objective, remaining allowance and mode on the OLED, with the adopted pause/victory LED mapping and startup/domain timing behavior.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "10"
+  title: Validate and tune all three gameplay stages
+  description: >-
+    Implement SPEC.md three-stage selection and prototype-gates.md G-6 from the adopted concepts and draft geometry in stage-layouts.md. Establish supported-at-rest starts and reproducible solutions within five accepted strokes, including Stage 3 contact-driven rotation and leftward ball transfer, recording any geometry or physics tuning in the shared contract.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "11"
+  title: Establish integrated board robustness and timing evidence
+  description: >-
+    Close prototype-gates.md G-1 through G-7 with the complete SPEC.md capability flows on the actual mouse, OLED and VGA converter chain. Record worst-case physics/admission/frame timing, aggregate resources and responsiveness, and establish reliable rejection, allowance, pause/reset/stale-event behavior and goal handling before making performance or fit claims.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""
+
+- id: "12"
+  title: Package the reproducible assessed release
+  description: >-
+    Complete prototype-gates.md G-8 and delivery-requirements.md using the integrated board-tested bitstream, reproducible sources/build settings, constraints, memory initialization and reuse notices. Confirm current course requirements and deliver the size-compliant archive, download/unzip check, evidence-grounded report, disclosures, peer feedback and 2–5 minute demonstration.
+  spec_checkpoint: true
+  done_checkpoint: true
+  invoke_dev_with: ""

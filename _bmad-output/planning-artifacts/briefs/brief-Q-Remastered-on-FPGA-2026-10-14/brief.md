@@ -1,17 +1,17 @@
 ---
 title: "Product Brief: Q Remastered on FPGA"
-status: draft
+status: complete
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-15
 ---
 
 # Product Brief: Q Remastered on FPGA
 
 ## Executive Summary
 
-Q Remastered on FPGA is a drawing-and-physics puzzle game for the Basys3 development board, inspired by Q REMASTERED. A player draws a limited number of strokes; those strokes become physical objects that can redirect a ball toward a level target. The first version focuses on a small, replayable puzzle loop that can be understood and demonstrated directly on the board.
+Q Remastered on FPGA is a drawing-and-physics puzzle game for the Basys3 development board, inspired by Q REMASTERED. A player draws a limited number of strokes; those strokes become physical objects that can redirect a ball toward the left display boundary. The first version focuses on a small, replayable puzzle loop that can be understood and demonstrated directly on the board.
 
-Gameplay appears on a VGA monitor, while the Pmod OLED presents level selection, objectives, drawing budget, and status. A mouse supplies drawing input; board buttons and switches control the game, and LEDs indicate state. All gameplay is integrated into one bitstream and designed around the FPGA's resource limits.
+The VGA display presents the stage lobby and full gameplay view. The Pmod OLED presents the current stage, objective, drawing budget, and status. A wired Logitech mouse supplies all game input; Basys3 buttons and switches are not used for game interaction, as course staff approved mouse-only input. LEDs indicate state. All gameplay is integrated into one bitstream and designed around the FPGA's resource limits.
 
 ## The Problem
 
@@ -19,7 +19,7 @@ Gameplay appears on a VGA monitor, while the Pmod OLED presents level selection,
 
 ## The Solution
 
-The player chooses a level, draws within a limited budget, and releases a stroke to create a movable object. The ball responds to gravity and collisions with drawn objects, fixed obstacles, and level boundaries. The player can pause, retry, and move between levels without reprogramming the board. VGA carries the main playfield; the OLED and board controls provide supporting information and actions.
+The player chooses a stage from a VGA lobby, draws within a limited budget, and releases a stroke for validation. A valid stroke becomes a movable rigid body; a stroke penetrating the ball, an existing stroke, or a fixed obstacle is rejected without consuming allowance. The sampled polyline stroke responds to gravity, collisions, and angular motion, along with the ball and fixed obstacles. The player can pause, reset, continue to the next stage after a win, or return to the lobby without reprogramming the board. The OLED presents supporting stage and status information.
 
 ## What Makes This Different
 
@@ -32,16 +32,16 @@ The project combines mouse-based drawing, a simplified physics puzzle, and an in
 ## Success Criteria
 
 - A player can select or start a level, draw and release an object, and observe the ball respond.
-- At least one level can be completed by guiding the ball into a clearly indicated target.
+- At least one level can be completed by guiding any part of the ball into contact with the clearly indicated left display boundary.
 - Pause and retry work without reprogramming the FPGA, and the integrated game remains responsive during a demonstration.
-- VGA gameplay, OLED information, and board controls communicate the game state clearly.
+- VGA gameplay, OLED information, and LEDs communicate the game state clearly.
 - The demonstrated capabilities run together in one bitstream within FPGA resource limits.
 
 These criteria align with the course evaluation areas: functionality, robustness and reliability, user interface, and user experience.
 
 ## Scope
 
-The first version includes one ball, a few player-drawn objects, predefined obstacles and targets, a limited drawing budget, and a small set of levels. It uses signed fixed-point physics for gravity, movement, and collisions, with translation and bouncing as the initial motion model. Rotation and large, unbounded object counts are outside the first-version scope. Additional features remain undecided until the core loop fits and works reliably on the board.
+The first version includes three selectable stages, each with one ball, a five-stroke allowance per attempt, up to eight predefined fixed platforms or sloped ramps, and the full left display boundary as the goal. Each fixed platform or ramp is represented by a static capsule. At most six moving bodies are active: one ball and five released strokes. It uses fixed-point physics for gravity, movement, collisions, and visible rotation of released strokes. Use at most eight sample points per stroke as a provisional architecture profile, subject to synthesis and timing analysis; exact hardware interfaces remain open.
 
 ## Vision
 
