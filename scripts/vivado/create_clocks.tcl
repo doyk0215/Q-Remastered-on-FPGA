@@ -1,6 +1,7 @@
 # Sourced after project creation. Generated .xci and build settings stay in build/.
 # Two MMCMs avoid assuming that one legal VCO can supply both exact rates.
 proc q_create_clock {name frequency multiplier divider output_divider} {
+    file mkdir [file join $::q_build_dir ip]
     create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 \
         -module_name $name -dir [file join $::q_build_dir ip]
     set_property -dict [list \
