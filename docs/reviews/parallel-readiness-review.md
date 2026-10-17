@@ -4,6 +4,8 @@ Date: 2026-10-17. Reviewer: Codex, acting as a technical document reviewer. This
 
 ## Verdict
 
+Approval update, 2026-10-17: the user explicitly approved package adoption and substituted their approval for the before-coding checkpoints of Stories 2, 3 and 6, including the short-preview clarification. The planning/start gate is satisfied for isolated parallel implementation. The technical review below remains the pre-approval record; no teammate approval, RTL timing proof or hardware gate is inferred.
+
 **Planning/design bundle prepared for human before-coding approval.** Concrete R1–R4 proposals and bounded first-build handoffs are now supplied. Reference/design checks validate selected mathematics and consistency, not the eventual RTL. Owner adoption, the provisional-short-preview clarification and named before-coding approvals remain pending; M0 is not falsely marked complete. See the [start checklist](../parallel-start-checklist.md).
 
 Scope: the parallel plan, draft Stories 2/3/6 and four implementation-design proposals, checked against the architecture spine, revision 2 contracts/headers, profiles and G-1 through G-5. The reference checker exercises design mathematics/invariants; no HDL simulation or board checks were run. The existing Story 1 Vivado results remain separate evidence.

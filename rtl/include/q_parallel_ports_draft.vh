@@ -1,4 +1,5 @@
-// PROPOSED parallel-build interfaces. Human adoption is pending.
+// Initial parallel-build interfaces adopted by the user on 2026-10-17.
+// Draft filename retained for stable links; runtime verification is pending.
 // No current application source includes this header. Existing public records
 // remain revision 2. These additive private/core ports use those record types.
 `ifndef Q_PARALLEL_PORTS_DRAFT_VH

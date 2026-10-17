@@ -2,6 +2,8 @@
 
 Prepared 2026-10-17. This is the entry point for the group S2_19 planning handoff. The bundle is prepared for approval, not a declaration that the human before-coding checkpoints have passed. No implementation threads or developer branches are launched by this document.
 
+**Approval update, 2026-10-17:** the user answered “Yes” to adopting the package and treating their approval as the before-coding checkpoint for Stories 2, 3 and 6, including short provisional previews. That explicit user authorization satisfies the start checkpoint in place of the pending named-review outcomes; it is not attributed to any teammate. Approved isolated parallel implementation may begin. Earlier pending-approval descriptions below are the preparation record, superseded by this update. Runtime evidence, completion reviews, CDC/board gates and exact course dates remain outstanding.
+
 ## Approval package
 
 | Artifact | Purpose |
@@ -60,11 +62,11 @@ These tickets are assigned work with acceptance criteria, not missing planning d
 
 ## Human approval record
 
-- Planning bundle approval: pending.
-- Story 2 before-coding reviewer outcome: pending.
-- Story 3 before-coding reviewer outcome: pending.
-- Story 6 before-coding reviewer outcome: pending.
-- Provisional-short-preview clarification: pending.
+- Planning bundle adoption: approved by the user on 2026-10-17.
+- Story 2 before-coding checkpoint: satisfied by explicit user authorization; no Doyeon sign-off is claimed.
+- Story 3 before-coding checkpoint: satisfied by explicit user authorization; no Choon Hsiang sign-off is claimed.
+- Story 6 before-coding checkpoint: satisfied by explicit user authorization; no Choon Hsiang sign-off is claimed.
+- Provisional-short-preview clarification: approved. A held path may be visible below 16 pixels; final admission still enforces >=16 pixels.
 - Exact course deadlines/source: pending.
 
 Record only actual approvals and supplied dates. An explicit user override of review arrangements must be written as that user's authorization; it must not be attributed to a named teammate.

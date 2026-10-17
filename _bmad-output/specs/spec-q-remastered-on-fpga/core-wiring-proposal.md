@@ -1,5 +1,7 @@
 # Controller, input and presentation wiring proposal
 
+Adoption update, 2026-10-17: approved by the user for the initial isolated parallel build, in place of the pending before-coding approvals. Earlier proposal/review-pending wording is the design history. Implementation evidence, completion review and physical/CDC gates remain required.
+
 Prepared 2026-10-17 to address R1 in the [readiness review](../../../docs/reviews/parallel-readiness-review.md). Status: concrete design proposal for owner review; not implemented or signed off. Qi-Ze owns controller/input coordination, Choon Hsiang owns renderer/mailbox transport, and Doyeon reviews admission/world joins.
 
 This refines [module-contracts.md](module-contracts.md) using its revision 2 records. It does not change record packing, enum values or the published headers. New local port names below are proposed explicit connections, not existing `q_ports.vh` macros. Before separate implementations depend on them, the owners must adopt the map and publish any shared port declarations through the normal coordinated contract process.

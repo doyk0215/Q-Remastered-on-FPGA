@@ -1,4 +1,5 @@
-// PROPOSED internal formats and tuning seeds; human adoption pending.
+// Initial formats/tuning adopted by the user on 2026-10-17.
+// Draft filename retained; numerical/RTL acceptance evidence is pending.
 // Does not replace q_geometry_params.vh or q_physics_params.vh.
 `ifndef Q_NUMERIC_PARAMS_DRAFT_VH
 `define Q_NUMERIC_PARAMS_DRAFT_VH

@@ -2,7 +2,10 @@
 title: Implement bounded rigid-body arithmetic and motion
 type: feature
 created: 2026-10-17
-status: draft
+status: ready-for-dev
+approved: 2026-10-17
+approval_authority: user
+approval_scope: before-coding checkpoint and isolated implementation; completion evidence pending
 baseline_commit: d96adc2aa72763f5fd27b2cb1988e00c16f5dc79
 lead: Kim Doyeon
 reviewer: Chua Choon Hsiang
@@ -15,6 +18,8 @@ context:
 ---
 
 ## Intent and scope
+
+Approval update: the user adopted the planning package on 2026-10-17 and explicitly satisfied this story's before-coding checkpoint. Earlier pending-review descriptions below record draft preparation, not a claimed teammate approval. The approved design package is linked from the parallel start checklist. Implementation/completion and hardware gates remain open.
 
 Provide CAP-7's bounded numerical foundation under G-3: geometry kernels, body-property arithmetic, gravity, translation, rotation and complete transformed geometry. Stories 4/5 reuse this foundation for contact response and admission. This story does not claim a completed collision solver, supported stage starts, atomic admission, gameplay controller or solvable stages.
 

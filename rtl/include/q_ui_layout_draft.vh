@@ -1,4 +1,5 @@
-// PROPOSED shared visual/input constants; human adoption pending.
+// Initial shared visual/input constants adopted by the user on 2026-10-17.
+// Draft filename retained; implementation/readability verification pending.
 // Rectangles are half-open. Focus/action encodings remain in q_contract.vh.
 `ifndef Q_UI_LAYOUT_DRAFT_VH
 `define Q_UI_LAYOUT_DRAFT_VH

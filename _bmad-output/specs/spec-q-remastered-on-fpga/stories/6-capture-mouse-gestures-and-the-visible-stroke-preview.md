@@ -2,7 +2,10 @@
 title: Capture mouse gestures and the visible stroke preview
 type: feature
 created: 2026-10-17
-status: draft
+status: ready-for-dev
+approved: 2026-10-17
+approval_authority: user
+approval_scope: before-coding checkpoint and isolated implementation; completion evidence pending
 baseline_commit: d96adc2aa72763f5fd27b2cb1988e00c16f5dc79
 lead: Han Qi-Ze
 reviewer: Chua Choon Hsiang
@@ -15,6 +18,8 @@ context:
 ---
 
 ## Intent and scope
+
+Approval update: the user adopted the planning package on 2026-10-17, satisfied this story's before-coding checkpoint and approved short provisional previews while retaining the 16-pixel final admission minimum. Earlier pending-review descriptions below record draft preparation, not a claimed teammate approval. Implementation/completion and hardware gates remain open.
 
 Implement CAP-4's deterministic gesture capture and preview state under G-4. Consume coherent mouse reports, simplify the provisional sampled path to at most eight vertices and submit the same visible geometry on release. Recognize UI gestures once using the actually presented attempt/view. Qi-Ze owns capture and action state; Choon Hsiang contributes visible preview, fonts and common layout through the graphics implementation.
 

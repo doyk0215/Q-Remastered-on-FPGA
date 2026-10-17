@@ -1,5 +1,7 @@
 # Shared length and numerical design proposal
 
+Adoption update, 2026-10-17: approved by the user for the initial isolated parallel build, including the corrected 1/8-pixel transform reserve. Earlier proposal/review-pending wording is the design history. Width/range validation, actual kernel cycles, completion review and hardware proof remain implementation obligations.
+
 Prepared 2026-10-17 for Story 3 and readiness item R2. Status: selected design proposal, pending Doyeon's ownership review, Qi-Ze's shared-length agreement and Choon Hsiang's geometry review. No arithmetic RTL, simulation, synthesis or timing validation is supplied by this document.
 
 The binding inputs remain [geometry-profile.md](geometry-profile.md), [module-contracts.md](module-contracts.md) and the current four common headers. This document proposes internal representations and kernels; it does not revise the adopted external 18-bit Q6 geometry, interface revision 2, geometry profile 3 or physics profile 1. New internal constants must be published through coordinated implementation definitions before consumers use them.

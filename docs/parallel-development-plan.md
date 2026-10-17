@@ -2,6 +2,8 @@
 
 Prepared 2026-10-17. This is the coordination plan for the ownership split in [story-ownership.md](story-ownership.md). It defines work order and handoffs; named reviewer approval and story acceptance are still pending. It does not mark any story or prototype gate complete.
 
+Approval update, 2026-10-17: the user explicitly adopted this package and supplied the before-coding checkpoint for Stories 2, 3 and 6, including the provisional-short-preview clarification. Their isolated build tracks may start. This supersedes the earlier pending-adoption/start-review statements in the planning drafts, without claiming teammate sign-offs or completion evidence. Exact dated milestones and physical gates remain pending; see the [approval record](parallel-start-checklist.md).
+
 ## Starting point and deadlines
 
 Use commit `d96adc2` or a descendant containing its Vivado fixes as the common starting point. Vivado 2025.2 project creation, synthesis and routing passed for xc7a35tcpg236-1 with JB selected for the planned OLED connection. Timing passes and DRC has zero violations. Story 1 remains in progress: four CDC findings, reset/input behavior, physical wiring and peripheral operation still require evidence. Source byte hashes also need a checkout line-ending policy; see [hardware-bringup.md](hardware-bringup.md).

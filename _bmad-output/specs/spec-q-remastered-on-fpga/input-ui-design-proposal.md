@@ -1,5 +1,7 @@
 # Stroke capture and shared UI design proposal
 
+Adoption update, 2026-10-17: approved by the user for the initial isolated parallel build, explicitly including short provisional previews with the unchanged 16-pixel final admission minimum. The common contract now records that clarification. Earlier proposal/review-pending wording is the design history; actual glyph/readability, RTL and completion evidence remain outstanding.
+
 Prepared 2026-10-17 for G-4 and readiness item R3. Status: concrete proposal for Qi-Ze's capture ownership review, Choon Hsiang's visual review and Doyeon's geometry/length agreement. It does not implement RTL, generate font assets, approve a story or establish board usability.
 
 This elaborates the existing [module contracts](module-contracts.md), [geometry profile](geometry-profile.md), [core wiring proposal](core-wiring-proposal.md) and [numerical proposal](numerical-design-proposal.md). External records remain revision 2. All coordinates below are proposed common definitions; they must become one coordinated layout source before dependent input/rendering code uses them.

@@ -1,5 +1,7 @@
 # Buffered renderer and frame-transfer design proposal
 
+Adoption update, 2026-10-17: approved by the user for the initial isolated parallel build. Earlier proposal/review-pending wording is the design history. Cycle targets and resource/CDC budgets are not measured acceptance; real peripheral/scanout integration retains its G-2 gate.
+
 Prepared 2026-10-17 for G-5/R4. Status: concrete implementation design for Choon Hsiang's ownership, Doyeon's geometry/resource review and Qi-Ze's UI/epoch review. It establishes a design to build and measure, not a claim that RTL meets timing or fits after integration.
 
 Use [module-contracts.md](module-contracts.md), [core-wiring-proposal.md](core-wiring-proposal.md), [input-ui-design-proposal.md](input-ui-design-proposal.md) and external interface revision 2. The selected framebuffer seed remains two one-bit banks plus frame-local magenta ball and UI metadata.

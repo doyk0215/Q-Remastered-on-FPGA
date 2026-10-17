@@ -2,7 +2,10 @@
 title: Render coherent buffered VGA scenes
 type: feature
 created: 2026-10-17
-status: draft
+status: ready-for-dev
+approved: 2026-10-17
+approval_authority: user
+approval_scope: before-coding checkpoint and isolated implementation; completion evidence pending
 baseline_commit: d96adc2aa72763f5fd27b2cb1988e00c16f5dc79
 lead: Chua Choon Hsiang
 reviewer: Kim Doyeon
@@ -15,6 +18,8 @@ context:
 ---
 
 ## Intent and scope
+
+Approval update: the user adopted the planning package on 2026-10-17 and explicitly satisfied this story's before-coding checkpoint. Earlier pending-review descriptions below record draft preparation, not a claimed teammate approval. The approved design package is linked from the parallel start checklist. Implementation/completion and hardware gates remain open.
 
 Implement CAP-11's bounded world rendering and coherent frame presentation under G-5. Consume complete transformed geometry and matching UI state; publish only completed frames through the revision 2 frame/epoch protocol. This story owns rendering, scanout, frame transfer and frame-local ball composition. It does not own physics, game state, stroke admission, OLED status or final stage solutions.
 
