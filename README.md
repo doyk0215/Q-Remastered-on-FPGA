@@ -4,7 +4,7 @@ A Basys3 FPGA drawing-and-physics puzzle game, inspired by Q REMASTERED. The pro
 
 ## BMad setup
 
-BMad Method v6.12.2 is installed in this repository, with Codex skills under `.agents/skills/`. Start Codex in this folder and use the `bmad-help` skill to choose the next workflow. Shared planning artifacts are saved under `_bmad-output/`.
+BMad Method **6.12.2** configuration and project plans are tracked here. Restore the local runtime/skills with `node scripts/team/setup_bmad.mjs --name "Your name"`, then reopen your AI project. Start with the [concise teammate guide](docs/TEAMMATE-GUIDE.md); agents must read [AGENTS.md](AGENTS.md). Skills are generated under `.agents/skills/` and plans remain under `_bmad-output/`. Select your assigned story explicitly rather than starting the sequential backlog again.
 
 ## Project brief
 
@@ -12,7 +12,7 @@ See [`docs/project-brief.md`](docs/project-brief.md) for the current scope and c
 
 ## Parallel development handoff
 
-Start with [the parallel start checklist](docs/parallel-start-checklist.md) for the three assignments, concrete design proposals, draft shared declarations, validation commands and pending human before-coding approvals. The plans do not declare CDC/board acceptance complete.
+Start with [the parallel start checklist](docs/parallel-start-checklist.md) for assignments, adopted designs, shared declarations, validation commands and the recorded user approval. Stories 2, 3 and 6 may begin isolated implementation; completion review and CDC/board acceptance remain open.
 
 ## Basys3 foundation and evidence
 

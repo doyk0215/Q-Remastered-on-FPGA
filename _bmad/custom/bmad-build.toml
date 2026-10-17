@@ -1,0 +1,9 @@
+# Team context for the pinned BMAD Build workflow. No checkpoint is disabled.
+[workflow]
+persistent_facts = [
+  "file:AGENTS.md",
+  "file:docs/story-ownership.md",
+  "file:docs/parallel-start-checklist.md",
+  "Use the human's explicit story/branch assignment; do not infer identity from BMAD defaults or auto-dispatch another teammate's next story.",
+  "The user's 2026-10-17 before-coding approval for Stories 2, 3 and 6 is recorded in the repository; actual completion review and hardware evidence remain required."
+]

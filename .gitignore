@@ -4,3 +4,11 @@
 /*.log
 /*.str
 /dfx_runtime.txt
+/_bmad/core/*
+/_bmad/bmm/*
+/_bmad/UPSTREAM-LICENSE
+/_bmad/config.user.toml
+/_bmad/custom/config.user.toml
+/_bmad/custom/*.user.toml
+/.agents/skills/
+/.claude/skills/

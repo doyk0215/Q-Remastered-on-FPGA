@@ -1,5 +1,7 @@
 # Parallel implementation start checklist
 
+First time joining the project? Start with the [teammate guide](TEAMMATE-GUIDE.md) for local BMAD setup, your branch and the starter prompt. Coding agents must read [AGENTS.md](../AGENTS.md).
+
 Prepared 2026-10-17. This is the entry point for the group S2_19 planning handoff. The bundle is prepared for approval, not a declaration that the human before-coding checkpoints have passed. No implementation threads or developer branches are launched by this document.
 
 **Approval update, 2026-10-17:** the user answered “Yes” to adopting the package and treating their approval as the before-coding checkpoint for Stories 2, 3 and 6, including short provisional previews. That explicit user authorization satisfies the start checkpoint in place of the pending named-review outcomes; it is not attributed to any teammate. Approved isolated parallel implementation may begin. Earlier pending-approval descriptions below are the preparation record, superseded by this update. Runtime evidence, completion reviews, CDC/board gates and exact course dates remain outstanding.

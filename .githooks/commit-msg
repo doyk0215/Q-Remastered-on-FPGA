@@ -1,0 +1,3 @@
+#!/bin/sh
+# Optional local hook: enable with setup_bmad.mjs --hooks.
+node scripts/team/check_workflow.mjs --commit-message-file "$1"

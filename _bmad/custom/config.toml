@@ -1,4 +1,3 @@
 # Team overrides for the Q Remastered FPGA project.
 [core]
 project_name = "Q Remastered on FPGA"
-user_name = "Doyeon"
