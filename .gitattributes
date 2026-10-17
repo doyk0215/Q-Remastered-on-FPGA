@@ -1,0 +1,5 @@
+# Preserve the source bytes recorded by hardware/source-manifest.json.
+/rtl/** text eol=lf
+/third_party/** text eol=lf
+/third_party/supplied/Basys3_Master.xdc -text -eol
+/scripts/** text eol=lf

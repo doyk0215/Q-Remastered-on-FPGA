@@ -175,6 +175,7 @@
     }
   ],
   "generated_ip": {
+    "configuration_role": "Initial requested ratios below; Clocking Wizard automatic mode can resolve equivalent ratios. See last_verified_resolved_outputs.",
     "generator": "scripts/vivado/create_clocks.tcl",
     "vendor": "xilinx.com",
     "library": "ip",
@@ -200,7 +201,11 @@
         "vco_hz": 800000000
       }
     ],
-    "settings_record": "build/q_clk_*-resolved.txt and build/ip/*/*.xci"
+    "settings_record": "build/q_clk_*-resolved.txt and build/ip/*/*.xci",
+    "last_verified_resolved_outputs": [
+      { "module": "q_clk_pixel", "hz": 25200000, "mmcm_multiplier": 47.25, "mmcm_divider": 5, "output_divider": 37.5, "vco_hz": 945000000 },
+      { "module": "q_clk_oled", "hz": 6250000, "mmcm_multiplier": 15.125, "mmcm_divider": 2, "output_divider": 121, "vco_hz": 756250000 }
+    ]
   },
   "constraints_order": [
     "build/basys3_io.xdc",
@@ -214,11 +219,13 @@
       "JC"
     ],
     "physical_selection": "unconfirmed",
+    "planned_selection": "JB; selected by the user on 2026-10-16, physical wiring pending",
     "record": "build/build-selection.txt"
   },
   "verification": {
-    "performed": "Source inspection and SHA256 comparison only; no tests run.",
-    "vivado": "Not present in host PATH; no elaboration, synthesis or implementation evidence.",
+    "performed": "Source inspection plus Vivado 2025.2 project creation, synthesis, routing and reports on 2026-10-16. No HDL simulation or board tests performed.",
+    "vivado": "SW build 6299465 at C:/AMDDesignTools/2025.2/Vivado/bin/vivado.bat; timing met (WNS 3.906 ns, WHS 0.122 ns), zero DRC violations. Four critical CDC endpoints remain open.",
+    "source_bytes": "Pinned by .gitattributes; verify recorded hashes directly. scripts/planning/restore_source_bytes.mjs repairs only newline changes proven to restore each recorded hash.",
     "board": "Pending G-2; G-1/G-2 remain open."
   }
 }

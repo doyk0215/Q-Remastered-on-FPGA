@@ -41,9 +41,9 @@ Once the relevant Story 1 setup and shared contracts are agreed, the first devel
 | Kim Doyeon | Story 3, then Stories 4 and 5 | Publish numerical choices before dependent admission and geometry integration. |
 | Chua Choon Hsiang | Story 2 world rendering and safe frame transfer | Use the common snapshot/epoch contract; coordinate UI-dependent layers with Qi-Ze. |
 
-Story 7 joins the tracks after its required portions of Stories 1–6 are ready. Stories 8–10 complete the game, displays and stage solutions. Story 11 establishes integrated board evidence; Story 12 packages the accepted result. Story 1 currently has source implementation with Vivado/board acceptance pending.
+Story 7 joins the tracks after its required portions of Stories 1–6 are ready. Stories 8–10 complete the game, displays and stage solutions. Story 11 establishes integrated board evidence; Story 12 packages the accepted result. Story 1 has passed Vivado project creation, synthesis and routed timing; CDC review and behavioral/board acceptance remain pending.
 
-Review-before-coding and review-after-completion remain enabled for every story. This ownership map supports coordinated parallel work; the existing `stories.yaml` dispatcher still lists a sequential execution order. Starting parallel dispatch requires an explicit coordination plan for shared files and prerequisite outputs.
+Review-before-coding and review-after-completion remain enabled for every story. This ownership map supports coordinated parallel work; the existing `stories.yaml` dispatcher still lists a sequential execution order. Use the [parallel development plan](parallel-development-plan.md) for shared-file coordination, prerequisite outputs, explicit story selection and milestone exit criteria. It does not remove story review checkpoints or establish hardware acceptance.
 
 ## Apply the current game decisions
 
